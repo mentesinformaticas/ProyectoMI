@@ -1,0 +1,907 @@
+@import "reset.css";
+
+/*================================  HEADER  ==================================*/
+.logo-sistema {
+  display: flex;
+}
+
+#imagen-fondo-header {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+}
+
+
+.menu-all {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin-top: 74px;
+  padding: 25px;
+  background-color: rgba(3, 4, 29, 0.61);
+  box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+}
+
+.lista-padre-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lista-menu {
+  list-style: none;
+  text-align: center;
+  margin: 5px;
+}
+
+.lista-menu a {
+  text-decoration: none;
+  padding: 25px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  color : white;
+  border-radius: 10px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+.lista-menu:hover a{
+    background-color: #5e5cff7c;
+    box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+    color: white;
+    text-shadow: 2px 2px 6px white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+/*======================== RAYA MENU HEADER  =================================*/
+.navegacion-inicio, .materia-navegacion, .navegacion-calificaciones, .navegacion-curso, .navegacion-profesor{
+  text-decoration: underline;
+  color: yellow;
+}
+
+/*=========== estudianteInicio, profesorInicio, adminInicio (MAIN) ===========*/
+
+.main-all {
+  font-family: sans-serif;
+  padding-bottom: 40px;
+}
+
+.titulo-imagen-main {
+  position: absolute;
+}
+
+.titulo-imagen-main img {
+  height: 170px;
+  width: 170px;
+  margin: 50px 0 0 320px;
+}
+
+.datos-nombre {
+  margin-top: 20px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 2px 3px black;
+}
+
+.span-datos-nombre {
+  color: rgb(131, 7, 7);
+}
+
+.texto-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 41%;
+  padding-top: 4%;
+}
+
+.texto-main-lista {
+  position: absolute;
+  padding-top: 18%;
+  margin-left: 23%;
+  font-size: 20px;
+}
+
+.texto-main p {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.texto-main-datos {
+  color: rgb(7, 38, 131);
+}
+
+/*=============================== MATERIA ====================================*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.materia {
+  display: flex;
+  color: rgb(7, 38, 131);
+  text-shadow: 2px 2px 3px black;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+header{
+  width: 100%;
+}
+
+main{
+  width: 100%;
+}
+
+#table{
+   width: 100%;
+}
+
+#table tr{
+    width: 100%;
+    display: flex;
+}
+
+  #table th{
+    border: 1px solid rgb(195, 233, 249);
+    font-size: 19px;
+}
+
+
+#table tr th{
+  width: 100%;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+}
+
+table .tr th{
+  background-color: rgb(198, 238, 255);
+  color:rgb(19, 15, 18);
+}
+
+table .dias-semana th{
+ color: white;
+}
+
+#table .tr td{
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  background-color: rgb(198, 238, 255);
+  color: black;
+}
+
+.dias-semana {
+background-color:  rgb(102, 209, 255);
+}
+
+.dias-semana td{
+  width: 100%;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 6px black;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+   width: 100%;
+}
+
+.formulario-admin input {
+  background: rgb(131, 7, 7);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  width: 15%;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ th a:hover {
+  color: red;
+  text-shadow: 2px 2px 3px rgb(30, 93, 201);
+  transition: 1s;
+}
+
+.formulario-admin input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*=========================== CALIFICACIONES =================================*/
+.encabezados-notas {
+  display: flex;
+  color: rgb(7, 38, 131);
+  text-shadow: 2px 2px 3px black;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+.texto-formulario-notas {
+  margin-top: 20px;
+}
+
+.texto-formulario-notas #enlace-notas {
+  font-size: 17px;
+}
+
+.tablas-notas {
+  display: flex;
+  background-color: rgb(198, 238, 255);
+  font-size: 22px;
+  border-radius: 2%;
+}
+
+#nombreEstudiante-notas {
+  font-family: 'Roboto_Flex' arial;
+  font-size: 27px;
+  text-align: center;
+  color: rgb(214, 52, 52);
+  text-shadow: 2px 1px 2px black;
+}
+
+.tablas-notas tr .materia-notas{
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  padding: 10px 40px 10px 33px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.tablas-notas .parciales {
+  background-color: rgb(102, 209, 255);
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tablas-notas tr th {
+  padding: 10px 50px 10px 68px;
+}
+
+.formulario-notas {
+  text-align: center;
+}
+
+.formulario-notas a {
+  color: rgb(7, 38, 131);
+  margin-top: 1.7%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.formulario-notas a:hover {
+  color: rgb(131, 7, 7);
+  text-shadow: 2px 2px 2px black;
+  transition: 1s;
+}
+
+.formulario-notas input {
+  padding: 10px 20px 10px 20px;
+  width: 30%;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.formulario-notas input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*============================ EDITAR CURSO ================================*/
+.nombre-editar-curso-admin {
+  font-size: 20px;
+  position: absolute;
+  padding-top: 37px;
+  left: 31%;
+}
+
+.nombre-editar-curso-admin-2 {
+  font-size: 20px;
+  position: absolute;
+  left: 42%;
+  padding-top: 37px;
+}
+
+#asistencia1, #asistencia2, #asistencia3, #asistencia4, #asistencia5 {
+  margin: 70px 0px 0 100px;
+}
+
+.agregar-usuario-botones-4 {
+  padding-top: 70px;
+  position: absolute;
+  top: 75%;
+  left: 39%;
+}
+
+.agregar-usuario-botones-4 p {
+  margin-left: 64px;
+}
+
+.agregar-usuario-botones-4 p a {
+  text-decoration: none;
+}
+
+/*============================== EDITAR NOTAS ==============================*/
+.editar-nota-1{
+float: left;
+width: 360px;
+text-align: center;
+}
+
+.editar-nota-nombre{
+text align:center;
+font-size: 20px;
+}
+
+.agregarUsuario-grupo-2{
+    background-color: white;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 710px;
+    height: 481px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.agregarUsuario-grupo-2 div input, .agregarUsuario-grupo div select {
+  height: 40px;
+  margin-left: 45px;
+  margin-top: 14px;
+  font-size: 20px;
+}
+
+.nombre-materia-editar {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.editar-nota-botones input{
+  margin: 5px 0px 0px 10px;
+  padding: 0px 25px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+#nota1, #nota2, #nota3, #nota4{
+  margin: 90px 0px 0 120px;
+}
+
+.editar-notas-perido-2 input, .editar-notas-perido-1 input, .editar-notas-perido-3 input, .editar-notas-perido-4 input, .editar-notas-perido-5 input {
+  width: 40px;
+}
+
+.grupo-notas-izquierdo{
+  position: absolute;
+  margin-left: 25%;
+  width: 17%;
+  top: 26.6%;
+}
+
+.editar-notas-perido-1 label, .editar-notas-perido-2 label {
+  font-size: 20px;
+  position: absolute;
+  padding-top: 54px;
+  left: 31%;
+}
+
+.editar-notas-perido-3 label, .editar-notas-perido-4 label {
+  font-size: 20px;
+  position: absolute;
+  left: 40%;
+  padding-top: 54px;
+}
+
+.agregar-usuario-botones-3{
+  padding-top: 20px;
+  position: absolute;
+  top: 75%;
+  left: 39%;
+}
+
+.agregar-usuario-botones-3 p {
+  margin-left: 64px;
+}
+
+.agregar-usuario-botones-3 p a {
+  text-decoration: none;
+}
+
+ #boton-guardar-3 {
+  margin: 20px 0 0 40px;
+  padding: 10px 50px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+ #boton-guardar-3:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*============================ PROFESOR ==================================*/
+#titulo-profesores {
+  display: flex;
+  color: rgb(7, 38, 131);
+  text-shadow: 2px 2px 3px black;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+#tabla-profesor {
+  background-color: rgb(198, 238, 255);
+  font-size: 19px;
+  margin-top: 22px;
+  border-radius: 2%;
+  width: 100%;
+}
+
+#tabla-profesor .titulos-nombres-profesor {
+  background-color:  rgb(102, 209, 255);
+  color: white;
+  text-align: center;
+  font-family: 'Roboto_Flex' arial;
+  font-size: 19px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.titulos-nombres-profesor td {
+  padding: 20px 10px;
+}
+
+#tabla-profesor tr th {
+  padding: 10px 3px;
+  border: 2px solid rgb(195, 233, 249);
+  font-size: 18px;
+  font-family: 'Roboto_Flex', arial;
+}
+
+.tabla-profesor-nombres {
+  font-weight: bold;
+}
+
+.espacio-profesor {
+  padding: 0 10px;
+}
+
+#tabla-profesor tr th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tabla-profesor tr th a:hover {
+  color: red;
+  text-shadow: 2px 2px 3px rgb(30, 93, 201);
+  transition: 1s;
+}
+
+.boton-select select{
+  height: 26px;
+  font-size: 14px;
+}
+
+.boton-select input {
+  margin-left: 13px;
+  height: 26px;
+  width: 75px;
+  font-size: 14px;
+}
+
+/*============================ ESTUDIANTE ==================================*/
+#titulo-estudiantes {
+  display: flex;
+  color: rgb(7, 38, 131);
+  text-shadow: 2px 2px 3px black;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+#tabla-estudiantes {
+  background-color: rgb(198, 238, 255);
+  font-size: 22px;
+  border-radius: 2%;
+  width: 100%;
+}
+
+#tabla-estudiantes .titulos-nombres-estudiantes {
+  background-color:  rgb(102, 209, 255);
+  color: white;
+  text-align: center;
+  font-family: arial;
+  font-size: 19px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.titulos-nombres-estudiantes td {
+  padding: 20px 10px;
+}
+
+#tabla-estudiantes tr th {
+  padding: 10px 3px;
+  border: 2px solid rgb(195, 233, 249);
+  font-size: 18px;
+  font-family: 'Roboto_Flex', arial;
+}
+
+.tabla-estudiantes-nombres {
+  font-weight: bold;
+}
+
+#tabla-estudiantes tr th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 30px 20px 10px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tabla-estudiantes tr th a:hover {
+  color: red;
+  text-shadow: 2px 2px 3px rgb(30, 93, 201);
+  transition: 1s;
+}
+
+/*=====================BTN ESTUDIANTE - PROFESOR ============================*/
+.formulario-agregar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.formulario-agregar input {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.formulario-agregar input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*================================= CURSO ====================================*/
+.titulo-asistencia {
+  color: rgb(7, 38, 131);
+  text-shadow: 2px 2px 3px black;
+  font-weight: bold;
+  font-family: arial;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+.fecha-asistencia span {
+  color: rgb(131, 7, 7);
+  text-shadow: 2px 2px 2px black;
+}
+
+.tabla-asistencia {
+  background-color: rgb(198, 238, 255);
+  font-family: arial;
+  font-size: 22px;
+  border-radius: 2%;
+  width: 100%;
+}
+
+.tabla-asistencia-titulo th {
+  background-color:  rgb(102, 209, 255);
+  color: white;
+  text-shadow: 2px 2px 6px black;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+}
+
+.campos-tabla-asistencia th{
+  padding: 10px;
+  text-align: center;
+}
+
+
+.campos-asistencias {
+  color: rgb(131, 7, 7);
+}
+
+.formulario-curso, .mini-explicacion {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-curso input {
+  background-color: rgb(131, 7, 7);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-top: 0.5%;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.formulario-curso input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+.mini-explicacion {
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+.mini-explicacion p {
+  padding: 0 2%;
+  color: rgb(131, 7, 7);
+  font-weight: bold;
+}
+
+.mini-explicacion p span{
+  color: black
+}
+
+/*============================ EDITAR Y AGREGAR ==============================*/
+.agregarUsuario{
+    background:url(../imagenes/login-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.editarUsuario {
+  background:url(../imagenes/login-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.editarUsuario .agregarUsuario-grupo {
+  background-color: white;
+  border: 2px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 716px;
+  height: 481px;
+  box-shadow: 3px 3px 6px black;
+}
+
+.agregarUsuario-grupo{
+    background-color: white;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 710px;
+    height: 540px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.agregarUsuario-titulo{
+ background-color: red;
+ color: white;
+ font-size: 30px;
+ font-family: sans-serif;
+ box-shadow: 3px 3px 6px black;
+ text-shadow: 3px 3px 3px black;
+ width: 53%;
+ margin-top: 1%;
+ text-align: center;
+ padding: 20px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ border-bottom: solid 4px blue;
+}
+
+.agregarUsuario-grupo div input, .agregarUsuario-grupo div select {
+  height: 40px;
+  margin-left: 45px;
+  margin-top: 14px;
+  font-size: 20px;
+}
+
+.agregar-usuario-apellido input, .agregar-usuario-nombre input, .editar-usuario-apellido input, .editar-usuario-nombre input{
+  width: 250px;
+}
+
+.agregar-usuario-apellido, .agregar-usuario-curso, .agregar-usuario-lista, .agregar-usuario-clave, .agregar-usuario-fecha-profesor, .editar-usuario-apellido, .editar-usuario-telefono, .editar-usuario-clave, .editar-usuario-curso, .editar-usuario-sexo {
+  position: absolute;
+  margin-left: 26%;
+}
+
+.agregar-usuario-correo input, .agregar-usuario-direccion input, .editar-usuario-correo input {
+  width: 55%;
+}
+
+.editar-usuario-direccion input {
+  width: 40%;
+}
+
+.editar-materia-viernes, .editar-materia-jueves, .editar-materia-miercoles, .editar-materia-martes, .editar-materia-lunes {
+  height: 40px;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.editar-materia-lunes, .editar-materia-martes, .editar-materia-hora {
+  margin-top: 15.5px;
+}
+
+.editar-materia-hora {
+  height: 34px;
+  width: 27%;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.editar-materia-grupo-derecho {
+  top: 20%;
+  position: absolute;
+  margin-left: 26%;
+}
+
+.titulo-editar-materia {
+  position: relative;
+  font-size: 22px;
+  left: 40px;
+  margin-top: 50px;
+}
+
+.titulo-editar-materia-izquierdo {
+  position: relative;
+  font-size: 22px;
+  left: 70px;
+  margin-top: 50px;
+}
+
+.agregar-usuario-botones-editar {
+  position: absolute;
+  left: 40%;
+  margin-top: 30px;
+}
+
+.agregar-usuario-botones-editar-2 {
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+}
+
+.agregar-usuario-botones-editar p {
+  margin-left: 70px;
+}
+
+.agregar-usuario-botones-editar-2 p {
+  margin-left: 40px;
+}
+
+.agregar-usuario-botones-editar-2 p a, .agregar-usuario-botones-editar p a {
+  text-decoration: none;
+}
+
+.agregar-usuario-botones{
+  padding-top: 20px;
+  position: absolute;
+  top: 85%;
+  left: 39%;
+}
+
+.agregar-usuario-botones-editar-2 input {
+  margin: 20px 0 0 20px;
+  padding: 7px 50px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.agregar-usuario-botones-editar-2 input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+.agregar-usuario-botones input, .boton-guardar {
+  margin: 10px 0 0 20px;
+  padding: 0 50px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.agregar-usuario-botones input:hover, .boton-guardar:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+.agregar-usuario-botones p a, .editar-estudiante-botones p a {
+  text-decoration: none;
+}
+.agregar-usuario-botones p {
+  margin-left: 30%;
+}
+
+/*============================ FOOTER ALL ==================================*/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 74px;
+  background-color: rgba(3, 4, 29, 0.9);
+  padding: 25px;
+  width: 96.3%;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: arial;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
